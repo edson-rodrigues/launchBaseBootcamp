@@ -1,0 +1,82 @@
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,700;1,400&display=swap";
+
+body{
+    background-color: #7159c1;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.cursos{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.imagem-curso{
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.curso{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    background-color: #50fa7b;
+}
+#wrapper h1{
+    color:#50fa7b;
+    font-size: 45px;
+    text-align: center;
+}
+
+/*MODAL*/
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal{
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .maximize-modal{
+    color: black;
+    position: absolute;
+    right: 48px;
+    top: 8px;
+    cursor: pointer;
+}
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/*MODAL ACTIVE*/
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.maximize{
+    width: 100%;
+    height: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}

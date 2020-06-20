@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+<!DOCTYPE html>
+<html lang="pt_br">
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conteúdos</title>
+    <link rel="stylesheet" href="/conteudos.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock %}
+<body>
+    {% block content %}
+    
+    <div id="wrapper">
+        <h1>Conteúdos</h1>
+    </div>
+        <section class="cursos">
+            <div class="curso" id="starter">
+                <div class="imagem-curso">
+                    <img src="starter.svg" alt="Starter">
+                </div>
+                <div class="conteudo-curso">
+                    <p>
+                        Starter
+                    </p>
+                </div>
+                <div class="info-curso">
+                    <p>2 etapas</p>
+                    <p class="preco-curso">Gratuito</p>
+                </div>
+            </div>
+
+            <div class="curso" id="launchbase">
+                <div class="imagem-curso">
+                    <img src="launchbase.svg" alt="Launchbase">
+                </div>
+                <div class="conteudo-curso">
+                    <p>
+                        Launchbase
+                    </p>
+                </div>
+                <div class="info-curso">
+                    <p>5 etapas</p>
+                    <p class="preco-curso">R$ 996,00</p>
+                </div>
+            </div>
+
+            <div class="curso" id="gostack">
+                <div class="imagem-curso">
+                    <img src="gostack.svg" alt="Gostack">
+                </div>
+                <div class="conteudo-curso">
+                    <p>
+                        Gostack
+                    </p>
+                </div>
+                <div class="info-curso">
+                    <p>? etapas</p>
+                    <p class="preco-curso">R$ ?</p>
+                </div>
+            </div>
+        </section>
+        <div class="modal-overlay">
+            <div class="modal">
+                <a class="maximize-modal">
+                    <i class="material-icons">maximize</i>
+                </a>
+                <a class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+                <div class="modal-content">
+                     <iframe src="" frameborder="0"></iframe>
+                </div>
+            </div> 
+         </div>
+         <script src="/conteudos.js"></script>
+    {% endblock %}
+</body>
+</html>

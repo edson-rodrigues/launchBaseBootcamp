@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+<!DOCTYPE html>
+<html lang="pt_br">
+{% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="/sobre.css">
+{% endblock %}
+
+{% block content %}
+<div id="wrapper">
+    <div id="logo">
+        <img src="logo-rocketseat.jpg" alt="logo da rocketseat">
+        <h1>Rocketseat</h1>
+        <h2>No meio de tanta informação e da quantidade de ferramentas que surgem todos os dias, você precisa de alguém que te leve na direção certa.</h2>        
+    </div>
+    <div id="tecnologias">
+        <h2>Tecnologias</h2>
+        <ul class="none">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React/React Native</li>
+            <li>Node</li>
+        </ul>
+    </div>
+    <div id="social-media">
+        <a style="padding-right: 20px;" href="https://www.facebook.com/rocketseat">Facebook</a>
+        <a style="padding-right: 20px;" href="https://www.instagram.com/rocketseat_oficial/">Instagram</a>
+        <a href="https://twitter.com/rocketseat">Twitter</a>
+    </div>
+</div>    
+{% endblock %}
+</html>
