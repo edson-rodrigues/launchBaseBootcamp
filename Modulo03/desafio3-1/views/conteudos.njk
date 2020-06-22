@@ -17,50 +17,22 @@
         <h1>Conteúdos</h1>
     </div>
         <section class="cursos">
-            <div class="curso" id="starter">
+            {% for curso in cursos %}
+            <div class="curso" id="{{curso.id}}">
                 <div class="imagem-curso">
-                    <img src="/starter.svg" alt="Starter">
+                    <img src="{{curso.imgSrc}}" alt="Imagem de {{curso.title}}">
                 </div>
                 <div class="conteudo-curso">
                     <p>
-                        Starter
+                        {{curso.title}}
                     </p>
                 </div>
                 <div class="info-curso">
-                    <p>2 etapas</p>
-                    <p class="preco-curso">Gratuito</p>
+                    <p>{{curso.modules}}</p>
+                    <p class="preco-curso">{{curso.price}}</p>
                 </div>
             </div>
-
-            <div class="curso" id="launchbase">
-                <div class="imagem-curso">
-                    <img src="/launchbase.svg" alt="Launchbase">
-                </div>
-                <div class="conteudo-curso">
-                    <p>
-                        Launchbase
-                    </p>
-                </div>
-                <div class="info-curso">
-                    <p>5 etapas</p>
-                    <p class="preco-curso">R$ 996,00</p>
-                </div>
-            </div>
-
-            <div class="curso" id="gostack">
-                <div class="imagem-curso">
-                    <img src="/gostack.svg" alt="Gostack">
-                </div>
-                <div class="conteudo-curso">
-                    <p>
-                        Gostack
-                    </p>
-                </div>
-                <div class="info-curso">
-                    <p>? etapas</p>
-                    <p class="preco-curso">R$ ?</p>
-                </div>
-            </div>
+            {% endfor %}
         </section>
         <div class="modal-overlay">
             <div class="modal">
