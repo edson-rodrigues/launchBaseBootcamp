@@ -17,7 +17,7 @@ body{
     height: 26.9px;
     margin-right: 122.4px;
 }
-.main-menu a{
+#menu-item{
     font-size: 16px;
     line-height: 19px;
     margin-right:30px;
