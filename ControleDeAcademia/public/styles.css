@@ -61,3 +61,29 @@ header{
     width: 100%;
     transition: width 700ms cubic-bezier(0.98, 0.45, 0.38, 0.73);
 }
+
+/*  ##### CARD ##### */
+.card{
+    background-color: white;
+    width: 800px;
+    height: 400px;
+
+    margin: 45px auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.2);
+
+    animation-name: up;
+    animation-duration: 700ms;
+}
+
+@keyframes up{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
